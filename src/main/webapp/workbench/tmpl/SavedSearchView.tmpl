@@ -1,0 +1,77 @@
+<script type="text/html" id="SavedSearchView">
+	<div class="SavedSearchView">
+		<ul class="nav nav-tabs savedSearch">
+		  <li class="list active"><a href="javascript:void(0)">listSavedSearches</a></li>
+		  <li class="save"><a>saveSavedSearches</a></li>
+		  <li class="delete"><a>deleteSavedSearches</a></li>
+		</ul>
+
+		<h3>Input</h3>
+		<div class="row">
+			<div class="col-md-8 left-size">
+				<div class="savedSearchView-form form-horizontal">
+					{{> SavedSearchView-listSavedSearches}}
+				</div>
+			</div>
+		</div>
+		<section class="bottomSectionCtn">
+
+		</section>
+	</div>
+</script>
+
+<script id="SavedSearchView-listSavedSearches" type="text/html">
+	<div class="form-group savedSearch-name">		
+		<label for="search" class="col-sm-3">Scope</label>
+		<div class="col-sm-9">
+			{{> SavedSearchView-Scopes}}
+		</div>
+
+		<div class="user-group hide">
+			<label for="search" class="col-sm-3">User</label>
+			<div class="col-sm-9">
+				<input type="text" class="form-control user" placeholder="">
+			</div>
+		</div>
+	</div>
+</script>
+
+<script id="SavedSearchView-saveSavedSearches" type="text/html">
+	<div class="form-group savedSearch-scope">		
+		<label for="search" class="col-sm-3">Name</label>
+		<div class="col-sm-9">
+			<input type="text" class="form-control name" placeholder="">
+		</div>
+
+		<label for="search" class="col-sm-3">Scope</label>
+		<div class="col-sm-9">
+			{{> SavedSearchView-Scopes}}
+		</div>
+
+		<div class="user-group">
+			<label for="search" class="col-sm-3">User</label>
+			<div class="col-sm-9">
+				<input type="text" class="form-control user" placeholder="">
+			</div>
+		</div>
+
+
+	</div>
+</script>
+
+<script id="SavedSearchView-deleteSavedSearches" type="text/html">
+	<div class="form-group savedSearch-id">
+		<label for="search" class="col-sm-3">Id</label>
+		<div class="col-sm-9">
+			<input type="text" class="form-control id" placeholder="">
+		</div>
+	</div>
+</script>
+
+<script id="SavedSearchView-Scopes" type="text/html">
+	<select class="form-control scope">
+		<option value ="public">Public</option>
+		<option value ="private">Private</option>
+		<option class="option-none" value ="none">None</option>
+	</select>
+</script>

@@ -1,0 +1,78 @@
+@import "utils.pcss";
+
+.MainView{
+	
+	.navbar{
+	    width:100%;
+		background: none;
+		border: none;
+		border-bottom: solid 1px $bdr-gray;
+		height: auto;
+		.navbar-brand{
+			font-weight: 200;
+			color: $txt-blue;
+			font-size: 24px;
+			letter-spacing: .1em;
+			small{
+				font-size: .8em;
+			}
+
+		}
+		.nav-ctn{
+			position: absolute;
+			top: 56px; left: 0; right: 0;
+			.navbar-left{
+				white-space: nowrap;
+				width: 160px;
+				min-height: 600px;
+				border-right: solid 2px #ccc;
+				padding-right: 8px;
+				li{
+					display: block;
+					float: left;
+					width: 100%;
+					margin-top: 4px;
+				}
+			}
+			.navbar-right{
+				margin-top: -56px;
+			}
+			a{
+				padding-bottom: 7px;
+				letter-spacing: .1em;
+				margin-right: 32px;
+				padding: 8px;
+				small{
+					font-size: .8em;
+				}
+			}
+			.active a{
+				background: #eee;
+				width: 100%;
+				border-radius: 4px;
+			}
+			.org-dropdown{
+				float:right;
+				margin: 15px 0px;
+				a{
+					margin-right: 0;
+					}
+				.dropdown-toggle{
+					cursor: pointer;
+					padding: 11px;
+					border-radius: 4px;
+				}
+				.dropdown-menu{
+					top: 27px;
+				}
+			}
+		}
+	}
+
+	section.content{
+		position: absolute;
+		top: 60px; right: 0; bottom: 0; left: 240px;
+	}
+
+
+}

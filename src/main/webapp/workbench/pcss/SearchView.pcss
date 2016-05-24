@@ -1,0 +1,55 @@
+@import "utils.pcss";
+
+.SearchView {
+	.row{
+		display: -webkit-box;
+		.left-size{
+			-webkit-box-flex: 1;
+			width: 0%;
+		}
+		.right-side{
+			-webkit-box-flex: 1;
+			width: 0%;
+		}
+	}
+	.searchview-form{
+		.form-group{
+			color: $txt-lighter;
+			.group{
+				.text{
+					display: block; 
+					float: left;
+					padding-top: 6px;
+				}
+				.value{
+					margin-left: 64px;
+					margin-top: 8px;
+				}
+				&.match-group{
+					margin-left: 64px;
+					.op-chk{
+						margin-top: 12px;
+					}
+				}
+			}
+		}
+	}
+	.searchView-search-columns-model{
+		.search-mode,.return-only,.order-type{
+			margin-bottom: 16px;
+			height: 64px;		
+		}
+		.object-type, .offset-limit{
+			margin-bottom: 16px;
+			height: 92px;
+		}
+		.order-by{
+			margin-bottom: 16px;
+			height: 112px;
+		}
+
+		.form-control{
+			margin-bottom: 8px;
+		}
+	}	
+}

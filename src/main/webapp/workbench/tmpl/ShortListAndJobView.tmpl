@@ -1,0 +1,81 @@
+<script type="text/html" id="ShortListAndJobView">
+<div class="ShortListAndJobView">
+	<ul class="nav nav-tabs customfields">
+		<li class="add-job-order active"><a href="javascript:void(0)">addToJobOrder</a></li>
+		<li class="add-short-list"><a>addToShortList</a></li>
+		<li class="remove-short-list"><a>removeFromShortList</a></li>
+		<li class="create-short-list"><a>createShortList</a></li>
+	</ul>
+	<h3 class="lable-input">Input</h3>
+	<div class="row">
+		<div class="col-md-8 left-size">
+			<div class="shortListAndJobView-form form-horizontal">
+			</div>
+		</div>
+	</div>
+	<section class="bottomSectionCtn">
+
+	</section>
+</div>
+</script>
+
+<script id="ShortListAndJobView-items-job" type="text/html">
+	<div class="form-group">
+		<label for="search" class="col-sm-3">Application SFID</label>
+		<div class="col-sm-9">
+			<input type="text" class="form-control sfid" placeholder="">
+		</div>
+
+		<label for="search" class="col-sm-3">Candidate SFID</label>
+		<div class="col-sm-9">
+			<input type="text" class="form-control candidate-sfid" placeholder="">
+		</div>
+
+		<label for="search" class="col-sm-3">Job SFID</label>
+		<div class="col-sm-9">
+			<input type="text" class="form-control job-sfid" placeholder="">
+		</div>
+	</div>
+</script>
+
+<script id="ShortListAndJobView-items-short-list" type="text/html">
+	<div class="form-group">
+		<label for="search" class="col-sm-3">Shortlistlink SFID</label>
+		<div class="col-sm-9">
+			<input type="text" class="form-control sfid" placeholder="">
+		</div>
+
+		<label for="search" class="col-sm-3">Candidate SFID</label>
+		<div class="col-sm-9">
+			<input type="text" class="form-control candidate-sfid" placeholder="">
+		</div>
+
+		<label for="search" class="col-sm-3">ShortList SFID</label>
+		<div class="col-sm-9">
+			<input type="text" class="form-control shortList-sfid" placeholder="">
+		</div>
+	</div>
+</script>
+
+<script id="ShortListAndJobView-removeFromShortList" type="text/html">
+	<div class="form-group savedSearch-id">
+		<label for="search" class="col-sm-3">SFIDS</label>
+		<div class="col-sm-9">
+			<input type="text" class="form-control id" placeholder="">
+		</div>
+	</div>
+</script>
+
+<script id="ShortListAndJobView-createShortList" type="text/html">
+	<div class="form-group createShortList">
+		<label for="search" class="col-sm-3">SFID</label>
+		<div class="col-sm-9">
+			<input type="text" class="form-control sfid" placeholder="">
+		</div>
+
+		<label for="search" class="col-sm-3">Name</label>
+		<div class="col-sm-9">
+			<input type="text" class="form-control name" placeholder="">
+		</div>
+	</div>
+</script>

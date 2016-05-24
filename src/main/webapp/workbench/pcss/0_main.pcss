@@ -1,0 +1,105 @@
+@import "utils.pcss";
+
+html, body{
+   height: 100%;
+   color: $txt;
+}
+
+#appbody{
+	position: absolute;
+	top: 30px; bottom: 10px;
+	left: 50%;
+	width: 1200px;
+	margin-left: -600px;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+/* --------- Common Elements --------- */
+H3 {
+	font-size: 24px;
+	font-weight: 200;
+	letter-spacing: .1em;
+	color: $txt; 
+}
+/* --------- /Common Elements --------- */
+
+
+/* --------- Common Form --------- */
+.form-control[disabled], fieldset[disabled] .form-control{
+	border: none;
+	background: $bkg-lighter;
+}
+.form-control, input, textarea {
+	box-shadow: none;
+}
+label, .label{
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: .1em;
+	color: $txt-label;
+	text-align: right;
+}
+
+.helper-text{
+	font-size: 11px;
+	color: $txt-lighter;
+	margin-top: 4px;
+}
+.left-size{
+	.form-group{
+		label{
+			margin-top: 4px;
+		}
+		.col-sm-9{
+			margin-bottom: 8px;
+		}
+	}
+}
+/* --------- /Common Form --------- */
+
+/* --------- right-side --------- */
+.right-side{
+	.line{
+		margin-left: 30px;
+		margin-bottom: 10px;
+		.checkbox-inline, .radio-inline{
+			font-size: 12px;
+			text-align: left;
+			width: 80px;
+			height: 16px;
+			display: inline-block;
+			input{
+				top: -3px;
+			}
+		}
+		label{
+			color: $txt-lighter;
+		}
+	}
+	.search-columns{
+		margin-bottom: 16px;
+		height: 92px;
+	}
+	.label{
+		margin-bottom: 8px;
+		display: block;
+		text-align: left;
+	}
+}
+
+/* --------- /right-side --------- */
+
+/* --------- Common nav --------- */
+.nav-tabs{
+	li{
+		cursor: pointer;
+	}
+}
+/* --------- /Common nav --------- */

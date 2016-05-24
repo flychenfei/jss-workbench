@@ -1,0 +1,69 @@
+@import "utils.pcss";
+
+.BottomSection{
+	.tab-panel{
+		
+		section.result{		
+			margin-top: 32px;
+			.nav-tabs{
+				margin-top: 16px;
+				margin-left: 20px;
+				&:hover{
+					cursor: pointer;
+				}
+				li{
+					
+				}
+			}
+			.panel{
+				padding-top: 8px;
+			}
+			.form-group{
+				
+				textarea{
+					min-height: 300px;
+					border-top-left-radius: 0px;
+					border-top-right-radius: 0px;
+				}
+			}
+		}
+
+	}
+
+	.form-group{
+		margin-left: 20px;
+	}
+
+	.apiurl-ctn{
+		margin: 10px 30px;
+		padding: 8px;
+		min-height: 92px;
+		border: solid 1px #efefef;
+		a{
+		    display: inline;
+            word-wrap: break-word;
+		}
+	}
+	.params-ctn{
+		min-height: 92px;
+	}
+	.perfbar{
+		margin-bottom: 8px;
+		.perf{
+			
+			float: left;
+			padding: 4px;
+			padding-right: 8px;
+			background-color: $bkg-lighter;
+			margin-right: 16px;
+			.name{
+				padding: 4px;				
+				display: inline-block;
+				color: $txt-light;
+			}
+			.time{
+				color: $bdr-blue;
+			}
+		}
+	}
+}

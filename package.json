@@ -1,0 +1,29 @@
+{
+  "name": "powersearch",
+  "version": "1.0.0",
+  "description": "Powersearch html asset processing",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "*",
+    "del": "*",
+    "fs-extra": "*",
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-ext-replace": "*",
+    "gulp-postcss": "*",
+    "hbsp": "*",
+    "path": "*",
+    "postcss-cssnext": "*",
+    "postcss-import": "*",
+    "postcss-mixins": "*",
+    "postcss-nested": "*",
+    "postcss-simple-vars": "*",
+    "postcss-value-parser": "*",
+    "vdev": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ""
+}

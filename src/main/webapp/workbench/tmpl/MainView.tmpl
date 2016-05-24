@@ -1,0 +1,41 @@
+<script type="text/html" id="MainView">
+<div class="MainView">
+	<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">W<small>ORKBENCH</small></a>
+      <div class="navbar-collapse nav-ctn">
+        <ul class="nav navbar-nav navbar-right">
+          <div class="dropdown org-dropdown">
+            <a class="dropdown-toggle">
+              <span class="dropdown-text"></span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+          </div>
+        </ul>
+        <ul class="nav navbar-nav navbar-left">
+          <li class="active"><a href="#">S<small>EARCH</small></a></li>
+          <li><a href="#omnisearch">O<small>MNISEARCH</small></a></li>
+          <li><a href="#autocomplete">A<small>UTOCOMPLETE</small></a></li>
+          <li><a href="#savedsearch">S<small>AVEDSEARCH</small></a></li>
+          <li><a href="#customfields">C<small>USTOMFIELDS</small></a></li>
+          <li><a href="#shortListAndJob">S<small>HORTLISTANDJOB</small></a></li>
+          <li><a href="#compliance">C<small>OMPLIANCE</small></a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+
+  <section class="content">
+  
+  </section>
+
+</div>
+</script>
+
+<script type="text/html" id="MainView-dropdowns">
+  {{#each items}}
+    <li data-org={{this}}><a href="javascript:void(0)">{{this}}</a></li>
+  {{/each}}
+</script>

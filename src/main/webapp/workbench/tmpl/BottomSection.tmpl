@@ -1,0 +1,66 @@
+<script id="BottomSection" type="text/html">
+	<div class="BottomSection">
+
+		<div class="tab-panel">
+			<section class="api-params">
+				<h3>API Params</h3>
+				<div class="params-ctn form-horizontal">
+				</div>
+			</section>
+			<section class="api-url">
+				<h3>API URL</h3>
+				<div class="apiurl-ctn">				
+				</div>
+				<div class="form-group">
+					<button type="button" class="btn btn-primary btn-exe">Execute</button>
+				</div>
+			</section>
+
+			<section class="result">
+				<h3>Response</h3>
+				<ul class="nav nav-tabs">
+				  <li class="result active"><a href="javascript:void(0)">Result</a></li>
+				  <li class="all"><a>All Response</a></li>
+				  <li class="perf"><a>Perf</a></li>
+				</ul>
+				<div class="form-group result-con panel">
+					<textarea class="form-control result"></textarea>
+				</div>
+				<div class="form-group all-con panel hide">
+					<textarea class="form-control all"></textarea>
+				</div>
+				<div class="form-group perf-con panel hide">
+					<div class="perfbar-ctn">
+					</div>
+					<textarea class="form-control perf"></textarea>
+				</div>
+			</section>
+
+		</div>
+
+	</div>
+</script>
+
+<script id="BottomSection-perfbar" type="text/html">
+<div class="perfbar clearfix">
+	{{#each perfs}}
+	<div class="perf">
+		<span class="name">{{name}}:</span>
+		<span class="time">{{time}}ms</span>
+	</div>
+	{{/each}}
+</div>
+</script>
+
+<script id="BottomSection-apiUrl" type="text/html">
+<a target="output" href="{{url}}">{{url}}</a>
+</script>
+
+<script id="BottomSection-paramItem" type="text/html">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">{{name}}</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" value="{{value}}" disabled>
+    </div>
+  </div>
+</script>

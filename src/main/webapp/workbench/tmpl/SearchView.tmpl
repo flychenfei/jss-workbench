@@ -1,0 +1,496 @@
+<script type="text/html" id="SearchView">
+<div class="SearchView">
+	<h3>Input</h3>
+
+	<div class="row">
+
+		<div class="left-size">
+			<div class="searchview-form form-horizontal">
+				<!-- text search -->
+				<div class="form-group">
+					<label for="search" class="col-sm-3">Text Search</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control q_search" placeholder="">
+					</div>
+				</div>
+				<!-- /text search -->
+
+				<!-- Skills -->
+				<div class="form-group skills-con">
+					<label for="search" class="col-sm-3">Skills</label>
+					<div class="col-sm-9">
+						<div>
+							<input type="text" class="form-control skill" placeholder="">
+						</div>
+						{{> SearchView-operator-group}}
+					</div>
+				</div>
+				<!-- /Skills -->
+
+				<!-- Educations -->
+				<div class="form-group educations-con">
+					<label for="search" class="col-sm-3">Educations</label>
+					<div class="col-sm-9">
+						<div>
+							<input type="text" class="form-control education" placeholder="">
+						</div>
+						<div class="group">
+							<span class="text">major:</span>
+							<div class="value">
+								<input type="text" class="form-control major" placeholder="">
+							</div>
+							
+						</div>
+						<div class="group">
+							<span class="text">degree:</span>
+							<div class="value">
+								<input type="text" class="form-control degree" placeholder="">
+							</div>
+						</div>
+						<!-- operator group -->
+						{{> SearchView-operator-group}}
+						<!-- /operator group -->
+					</div>
+				</div>
+				<!-- /Educations -->
+
+				<!-- Locations -->
+				<div class="form-group locations-con">
+					<label for="search" class="col-sm-3">Locations</label>
+					<div class="col-sm-9">
+						<div>
+							<input type="text" class="form-control location" placeholder="">
+						</div>
+
+						<!-- operator group -->
+						{{> SearchView-operator-group}}
+						<!-- /operator group -->
+					</div>
+				</div>
+				<!-- /Locations -->
+
+				<!-- Companies -->
+				<div class="form-group companies-con">
+					<label for="search" class="col-sm-3">Companies</label>
+					<div class="col-sm-9">
+						<div>
+							<input type="text" class="form-control employer" placeholder="">
+						</div>
+						<!-- time group -->	
+						<div class="group employer-time-group">
+							{{> SearchView-time-group}}
+						</div>
+						<!-- /time group -->
+						
+						<!-- operator group -->			
+						{{> SearchView-operator-group}}
+						<!-- /operator group -->	
+							
+					</div>
+				</div>
+				<!-- /Companies -->
+
+				<!-- Userlist -->
+				<div class="form-group userlists-con">
+					<label for="search" class="col-sm-3">Field: Userlist</label>
+					<div class="col-sm-9">
+						<div>
+							<input type="text" class="form-control userlist" placeholder="">
+						</div>
+
+						<!-- operator group -->
+						{{> SearchView-operator-group}}
+						<!-- /operator group -->
+					</div>
+				</div>
+				<!-- /Userlist -->
+				
+				<!-- GEO -->
+				<div class="form-group geo-group hide">
+					<label for="search" class="col-sm-3">GEO</label>
+					<div class="col-sm-9">
+						<!-- type -->
+						<div class="group type-group">
+							<span class="text type-text">type:</span>
+							<div class="value type-sel">
+								<select class="geo-type form-control">
+									<option value ="city">city</option>
+									<option value ="state">state</option>
+									<option value="country">country</option>
+									<option value="zip">zip</option>
+									<option value="latlong">latlong</option>
+									<option value="any">any</option>
+									<option value="match">match</option>
+								</select>
+							</div>
+						</div>
+						<!-- /type -->
+
+						<!-- values -->
+						<div class="geo-value-group">
+							{{>SearchView-geo-value}}
+						</div>
+						<!-- /values -->
+					</div>				
+				</div>
+				<!-- /GEO -->
+
+				<!-- Joborders -->
+				<div class="form-group joborders-con">
+					<label for="search" class="col-sm-3">Joborders</label>
+					<div class="col-sm-9">
+						<div>
+							<input type="text" class="form-control joborders" placeholder="">
+						</div>
+					</div>
+				</div>
+				<!-- /Joborders -->
+
+				<!-- Job Title -->
+				<div class="form-group titles-con">
+					<label for="search" class="col-sm-3">Job Title</label>
+					<div class="col-sm-9">
+						<div>
+							<input type="text" class="form-control jobtitle" placeholder="">
+						</div>
+						<div class="group title-time-group">
+							{{> SearchView-time-group}}
+						</div>
+
+						<!-- operator group -->
+						{{> SearchView-operator-group}}
+						<!-- /operator group -->
+					</div>			
+				</div>
+				<!-- /JobTitles -->
+
+				<!-- activities -->
+				<div class="form-group activities-con">
+					<label for="search" class="col-sm-3">Activities</label>
+					<div class="col-sm-9 activities">
+						{{> SearchView-before-after-date}}
+					</div>
+				</div>
+				<!-- /activities -->
+
+				<!-- Last Modied date -->
+				<div class="form-group modified-con">
+					<label for="search" class="col-sm-3">Last Modied date</label>
+					<div class="col-sm-9 modified">
+						{{> SearchView-before-after-date}}
+					</div>
+				</div>
+				<!-- /Last Modied date -->
+
+				<!-- stages -->
+				<div class="form-group stages-con">
+					<label for="search" class="col-sm-3">Stages</label>
+					<div class="col-sm-9">
+						<div>
+							<input type="text" class="form-control stages" placeholder="">
+						</div>
+
+						<!-- operator group -->
+						{{> SearchView-operator-group}}
+						<!-- /operator group -->
+					</div>
+				</div>
+				<!-- /stages -->
+
+				<!-- certifications -->
+				<div class="form-group certifications-con">
+					<label for="search" class="col-sm-3">Certifications</label>
+					<div class="col-sm-9">
+						<div>
+							<input type="text" class="form-control certifications" placeholder="">
+						</div>
+
+						<!-- operator group -->
+						{{> SearchView-operator-group}}
+						<!-- /operator group -->
+					</div>
+				</div>
+				<!-- /certifications -->
+
+				<!-- majors -->
+				<div class="form-group majors-con">
+					<label for="search" class="col-sm-3">Majors</label>
+					<div class="col-sm-9">
+						<div>
+							<input type="text" class="form-control majors" placeholder="">
+						</div>
+
+						<!-- operator group -->
+						{{> SearchView-operator-group}}
+						<!-- /operator group -->
+					</div>
+				</div>
+				<!-- /majors -->
+				
+				<!-- degrees -->
+				<div class="form-group degrees-con">
+					<label for="search" class="col-sm-3">Degrees</label>
+					<div class="col-sm-9">
+						<div>
+							<input type="text" class="form-control degrees" placeholder="">
+						</div>
+
+						<!-- operator group -->
+						{{> SearchView-operator-group}}
+						<!-- /operator group -->
+					</div>
+				</div>
+				<!-- /degrees -->
+
+			</div>
+		</div><!-- /.left-side -->
+
+		<div class="right-side">
+			<div class="searchView-search-columns-model">
+				<!-- Search Columns -->
+				<div class="search-columns">
+					<span class="text label">Search Columns</span>
+					<div class="columns">
+						<div class="line">
+							<label class="checkbox-inline">
+								<input type="checkbox" checked value="contact"> Contact 
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" checked value="company"> Employer 
+							</label>
+							<label class="checkbox-inline">
+							  <input type="checkbox" value="education"> Education
+							</label>
+						</div>
+						<div class="line">
+							<label class="checkbox-inline">
+								<input type="checkbox" value="skill"> Skill
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" value="location"> Location 
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" value="userlist"> Userlist 
+							</label>
+						</div>
+					</div>
+				</div>
+				<!-- /Search Columns -->
+
+				<!-- Search Mode -->
+				<div class="search-mode">
+					<span class="text label">Search Mode</span>
+					<div class="line">
+						<div class="mode-con">
+							<label class="radio-inline">
+								<input type="radio" name="searchMode" value="power" checked> Power
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="searchMode" value="verify"> verify
+							</label>
+						</div>
+					</div>
+				</div>
+				<!-- Search Mode -->
+
+				<!-- Object Type -->
+				<div class="object-type">
+					<span class="text label">Object Type</span>
+					<div class="line">
+						<label class="radio-inline">
+							<input type="radio" name="objectType" value="all" checked> All
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="objectType" value="contact"> Contact
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="objectType" value="candidate"> Candidate
+						</label>
+					</div>
+					<div class="line">
+						<label class="radio-inline">
+							<input type="radio" name="objectType" value="userlist"> Userlist
+						</label>
+					</div>
+				</div>
+				<!-- /Object Type -->
+				<!-- orderBy -->
+				<div class="order-by">
+					<span class="text label">orderBy</span>
+					<div class="line">
+						<label class="radio-inline">
+							<input type="radio" name="orderBy" checked value=""> None 
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="orderBy" value="contact"> Contact 
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="orderBy" value="company"> Employer 
+						</label>
+					</div>
+					<div class="line">
+						<label class="radio-inline">
+						  <input type="radio" name="orderBy" value="education"> Education
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="orderBy" value="skill"> Skill
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="orderBy" value="location"> Location 
+						</label>
+					</div>
+					<div class="line">
+						<label class="radio-inline">
+							<input type="radio" name="orderBy" value="userlist"> Userlist 
+						</label>
+					</div>
+				</div>
+				<div class="order-type">
+					<span class="text label">orderType</span>
+					<div class="line">
+						<label class="radio-inline">
+							<input type="radio" name="orderType" checked value=""> None 
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="orderType" value="true"> True 
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="orderType" value="false"> False 
+						</label>
+					</div>
+				</div>
+				<!-- /orderBy -->
+
+				<!-- offset and limit -->
+				<div class="offset-limit">
+					<div class="form-group">
+						<label for="search" class="col-sm-4">Offset: </label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control offset" placeholder="">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="search" class="col-sm-4">Limit: </label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control limit" placeholder="">
+						</div>
+					</div>
+				</div>
+				<!-- offset and limit -->
+
+				<!-- returnOnly-->
+				<div class="return-only">
+					<div class="form-group">
+						<label for="search" class="col-sm-4">returnOnly: </label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control returnOnly" placeholder="">
+						</div>
+					</div>
+				</div>
+				<!-- /returnOnly-->
+				
+			</div>
+		</div><!-- /.right-side -->
+	</div> <!-- /.row -->
+	
+	
+	<section class="bottomSectionCtn">
+
+	</section>
+</div>
+</script>
+<script id="SearchView-time-group" type="text/html">
+	<span class="text time-text">time:</span>
+	<div class="value operator-value">
+		<select class="time form-control">
+			<option value ="">Either</option>
+			<option value ="current">current</option>
+			<option value ="past">past</option>
+		</select>
+	</div>
+</script>
+
+<script id="SearchView-before-after-date" type="text/html">
+	<div class="group before-group">
+		<span class="text">before:</span>
+		<div class="value">
+			<input type="text" class="form-control before-date" placeholder="">
+		</div>
+	</div>
+	<div class="group after-group">
+		<span class="text">after:</span>
+		<div class="value">
+			<input type="text" class="form-control after-date" placeholder="">
+		</div>
+	</div>
+</script>
+
+<script id="SearchView-operator-group" type="text/html">
+	<div class="group operator-group">
+		<span class="text geo-text">operator:</span>
+		<div class="value operator-value">
+			<select class="operator form-control">
+				<option value ="O">Any</option>
+				<option value ="R">All</option>
+			</select>
+		</div>
+	</div>	
+</script>
+
+<script id="SearchView-geo-value" type="text/html">
+	<div class="group value-group">
+		<span class="text geo-text">values:</span>
+		<div class="value geo-value">
+			<input type="text" class="form-control geo geo-city" placeholder="">
+		</div>
+	</div>
+	{{> SearchView-geo-radius}}
+</script>
+<script id="SearchView-geo-match" type="text/html">
+	<div class="group match-group">
+		<div class="match">
+			<span class="text">zip:</span>
+			<div class="value">
+				<input type="text" class="form-control match-zip" placeholder="">
+			</div>
+		</div>
+		<div class="match">
+			<span class="text">city:</span>
+			<div class="value">
+				<input type="text" class="form-control match-city" placeholder="">
+			</div>
+		</div>
+		<div class="match">
+			<span class="text">state:</span>
+			<div class="value">
+				<input type="text" class="form-control match-state" placeholder="">
+			</div>
+		</div>
+		<div class="match">
+			<span class="text">country:</span>
+			<div class="value">
+				<input type="text" class="form-control match-country" placeholder="">
+			</div>
+		</div>
+		<div class="match">
+			<span class="text">op:</span>
+			<div class="value">
+				<input class="op-chk" type="checkbox" name="geoOp" value="no"> no
+			</div>
+		</div>
+		
+	</div>
+	{{> SearchView-geo-radius}}
+</script>
+<script id="SearchView-geo-radius" type="text/html">
+	<div class="group"> 
+		<span class="text">radius:</span>
+		<div class="radius-group">
+			<div class="value">
+				<input type="text" class="form-control radius" placeholder="">
+			</div>
+			
+		</div>
+	</div>						
+</script>
