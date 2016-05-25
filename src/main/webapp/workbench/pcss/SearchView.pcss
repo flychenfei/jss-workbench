@@ -4,17 +4,36 @@
 	.row{
 		display: -webkit-box;
 		.left-size{
-			-webkit-box-flex: 1;
+			-webkit-box-flex: 2;
 			width: 0%;
+			padding-right: 15px;
+			padding-left: 15px;
 		}
 		.right-side{
 			-webkit-box-flex: 1;
 			width: 0%;
+			padding-right: 15px;
+			padding-left: 15px;
 		}
 	}
 	.searchview-form{
 		.form-group{
 			color: $txt-lighter;
+			display: -webkit-box;
+			.control-title{
+				-webkit-box-flex: 1;
+				width: 0%;
+				padding-right: 15px;
+				padding-left: 15px;
+				text-align: right;
+			}
+			.control-input{
+				-webkit-box-flex: 3;
+				width: 0%;
+				padding-right: 15px;
+				padding-left: 15px;
+				margin-bottom: 8px;
+			}
 			.group{
 				.text{
 					display: block; 
@@ -24,6 +43,9 @@
 				.value{
 					margin-left: 64px;
 					margin-top: 8px;
+				}
+				.label{
+					width: 100%;
 				}
 				&.match-group{
 					margin-left: 64px;
