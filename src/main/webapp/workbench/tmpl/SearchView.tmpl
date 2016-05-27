@@ -2,27 +2,27 @@
 <div class="SearchView">
 	<h3>Input</h3>
 
-	<div class="row">
+	<div class="row flex-parent">
 
-		<div class="left-size">
+		<div class="left-size flex-child-2">
 			<div class="searchview-form form-horizontal">
 				<!-- text search -->
-				<div class="form-group">
-					<div class="control-title">
-						<label for="search" >Text Search</label>
+				<div class="form-group flex-parent">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Text Search</label>
 					</div>
-					<div class="control-input">
+					<div class="control-input flex-child-3">
 						<input type="text" class="form-control q_search" placeholder="">
 					</div>
 				</div>
 				<!-- /text search -->
 
 				<!-- Skills -->
-				<div class="form-group skills-con">
-					<div class="control-title">
-						<label for="search" >Skills</label>
+				<div class="form-group flex-parent skills-con">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Skills</label>
 					</div>
-					<div class="control-input">
+					<div class="control-input flex-child-3">
 						<div>
 							<input type="text" class="form-control skill" placeholder="">
 						</div>
@@ -32,11 +32,11 @@
 				<!-- /Skills -->
 
 				<!-- Educations -->
-				<div class="form-group educations-con">
-					<div class="control-title">
-						<label for="search" >Educations</label>
+				<div class="form-group flex-parent educations-con">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Educations</label>
 					</div>
-					<div class="control-input">
+					<div class="control-input flex-child-3">
 						<div>
 							<input type="text" class="form-control education" placeholder="">
 						</div>
@@ -61,11 +61,11 @@
 				<!-- /Educations -->
 
 				<!-- Locations -->
-				<div class="form-group locations-con">
-					<div class="control-title">
-						<label for="search" >Locations</label>
+				<div class="form-group flex-parent locations-con">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Locations</label>
 					</div>
-					<div class="control-input">
+					<div class="control-input flex-child-3">
 						<div>
 							<input type="text" class="form-control location" placeholder="">
 						</div>
@@ -78,11 +78,11 @@
 				<!-- /Locations -->
 
 				<!-- Companies -->
-				<div class="form-group companies-con">
-					<div class="control-title">
-						<label for="search" >Companies</label>
+				<div class="form-group flex-parent companies-con">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Companies</label>
 					</div>
-					<div class="control-input">
+					<div class="control-input flex-child-3">
 						<div>
 							<input type="text" class="form-control employer" placeholder="">
 						</div>
@@ -101,11 +101,11 @@
 				<!-- /Companies -->
 
 				<!-- Userlist -->
-				<div class="form-group userlists-con">
-					<div class="control-title">
-						<label for="search" >Field: Userlist</label>
+				<div class="form-group flex-parent userlists-con">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Field: Userlist</label>
 					</div>
-					<div class="control-input">
+					<div class="control-input flex-child-3">
 						<div>
 							<input type="text" class="form-control userlist" placeholder="">
 						</div>
@@ -118,11 +118,11 @@
 				<!-- /Userlist -->
 				
 				<!-- GEO -->
-				<div class="form-group geo-group hide">
-					<div class="control-title">
-						<label for="search" >GEO</label>
+				<div class="form-group flex-parent geo-group hide">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >GEO</label>
 					</div>
-					<div class="control-input">
+					<div class="control-input flex-child-3">
 						<!-- type -->
 						<div class="group type-group">
 							<span class="text type-text">type:</span>
@@ -150,11 +150,11 @@
 				<!-- /GEO -->
 
 				<!-- Joborders -->
-				<div class="form-group joborders-con">
-					<div class="control-title">
-						<label for="search" >Joborders</label>
+				<div class="form-group flex-parent joborders-con">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Joborders</label>
 					</div>
-					<div class="control-input">
+					<div class="control-input flex-child-3">
 						<div>
 							<input type="text" class="form-control joborders" placeholder="">
 						</div>
@@ -163,11 +163,11 @@
 				<!-- /Joborders -->
 
 				<!-- Job Title -->
-				<div class="form-group titles-con">
-					<div class="control-title">
-						<label for="search" >Job Title</label>
+				<div class="form-group flex-parent titles-con">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Job Title</label>
 					</div>
-					<div class="control-input">
+					<div class="control-input flex-child-3">
 						<div>
 							<input type="text" class="form-control jobtitle" placeholder="">
 						</div>
@@ -183,33 +183,33 @@
 				<!-- /JobTitles -->
 
 				<!-- activities -->
-				<div class="form-group activities-con">
-					<div class="control-title">
-						<label for="search" >Activities</label>
+				<div class="form-group flex-parent activities-con">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Activities</label>
 					</div>
-					<div class="control-input activities">
+					<div class="control-input flex-child-3 activities">
 						{{> SearchView-before-after-date}}
 					</div>
 				</div>
 				<!-- /activities -->
 
 				<!-- Last Modied date -->
-				<div class="form-group modified-con">
-					<div class="control-title">
-						<label for="search" >Last Modied date</label>
+				<div class="form-group flex-parent modified-con">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Last Modied date</label>
 					</div>
-					<div class="control-input modified">
+					<div class="control-input flex-child-3 modified">
 						{{> SearchView-before-after-date}}
 					</div>
 				</div>
 				<!-- /Last Modied date -->
 
 				<!-- stages -->
-				<div class="form-group stages-con">
-					<div class="control-title">
-						<label for="search" >Stages</label>
+				<div class="form-group flex-parent stages-con">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Stages</label>
 					</div>
-					<div class="control-input">
+					<div class="control-input flex-child-3">
 						<div>
 							<input type="text" class="form-control stages" placeholder="">
 						</div>
@@ -222,11 +222,11 @@
 				<!-- /stages -->
 
 				<!-- certifications -->
-				<div class="form-group certifications-con">
-					<div class="control-title">
-						<label for="search" >Certifications</label>
+				<div class="form-group flex-parent certifications-con">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Certifications</label>
 					</div>
-					<div class="control-input">
+					<div class="control-input flex-child-3">
 						<div>
 							<input type="text" class="form-control certifications" placeholder="">
 						</div>
@@ -239,11 +239,11 @@
 				<!-- /certifications -->
 
 				<!-- majors -->
-				<div class="form-group majors-con">
-					<div class="control-title">
-						<label for="search" >Majors</label>
+				<div class="form-group flex-parent majors-con">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Majors</label>
 					</div>
-					<div class="control-input">
+					<div class="control-input flex-child-3">
 						<div>
 							<input type="text" class="form-control majors" placeholder="">
 						</div>
@@ -256,11 +256,11 @@
 				<!-- /majors -->
 				
 				<!-- degrees -->
-				<div class="form-group degrees-con">
-					<div class="control-title">
-						<label for="search" >Degrees</label>
+				<div class="form-group flex-parent degrees-con">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label" >Degrees</label>
 					</div>
-					<div class="control-input">
+					<div class="control-input flex-child-3">
 						<div>
 							<input type="text" class="form-control degrees" placeholder="">
 						</div>
@@ -275,7 +275,7 @@
 			</div>
 		</div><!-- /.left-side -->
 
-		<div class="right-side">
+		<div class="right-side flex-child-1">
 			<div class="searchView-search-columns-model">
 				<!-- Search Columns -->
 				<div class="search-columns">
@@ -393,20 +393,20 @@
 
 				<!-- offset and limit -->
 				<div class="offset-limit">
-					<div class="form-group">
-						<div class="control-title">
-							<label for="search">Offset: </label>
+					<div class="form-group flex-parent">
+						<div class="control-title flex-child-1">
+							<label for="search" class="control-label">Offset: </label>
 						</div>
-						<div class="control-input">
+						<div class="control-input flex-child-3">
 							<input type="text" class="form-control offset" placeholder="">
 						</div>
 					</div>
 
-					<div class="form-group">
-						<div class="control-title">
-							<label for="search">Limit: </label>
+					<div class="form-group flex-parent">
+						<div class="control-title flex-child-1">
+							<label for="search" class="control-label">Limit: </label>
 						</div>
-						<div class="control-input">
+						<div class="control-input flex-child-3">
 							<input type="text" class="form-control limit" placeholder="">
 						</div>
 					</div>
@@ -415,11 +415,11 @@
 
 				<!-- returnOnly-->
 				<div class="return-only">
-					<div class="form-group">
-						<div class="control-title">
-							<label for="search">returnOnly: </label>
+					<div class="form-group flex-parent">
+						<div class="control-title flex-child-1">
+							<label for="search" class="control-label">returnOnly: </label>
 						</div>
-						<div class="control-input">
+						<div class="control-input flex-child-3 flex-child-3">
 							<input type="text" class="form-control returnOnly" placeholder="">
 						</div>
 					</div>
