@@ -1,22 +1,28 @@
 <script type="text/html" id="AutoCompleteView">
 <div class="AutoCompleteView">
 	<h3>Input</h3>
-	<div class="row">
-		<div class="col-md-8 left-size">
+	<div class="row flex-parent">
+		<div class="left-size flex-child-2">
 			<div class="autoCompleteView-form form-horizontal">
-				<div class="form-group">
-					<label for="search" class="col-sm-3">Text Search</label>
-					<div class="col-sm-9">
+				<div class="form-group flex-parent">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label">Text Search</label>
+					</div>
+					<div class="control-input flex-child-3">
 						<input type="text" class="form-control q_search" placeholder="">
 					</div>
 				</div>
-				<div class="form-group geo-group hide">
-					<label for="search" class="col-sm-3">GEO</label>
-					<div class="col-sm-9">
+				<div class="form-group  flex-parent geo-group hide">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label">GEO</label>
+					</div>
+					<div class="control-input flex-child-3">
 						<input type="text" class="form-control geo" placeholder="">
 					</div>
-					<label for="search" class="col-sm-3"></label>
-					<div class="col-sm-9">
+					<div class="control-title flex-child-1">
+						<label for="search" class="control-label"></label>
+					</div>
+					<div class="flex-child-3">
 						<select class="geo-type form-control">
 							<option value ="city">city</option>
 							<option value ="state">state</option>
@@ -29,7 +35,7 @@
 			</div>
 		</div>
 
-		<div class="col-md-4 right-side">
+		<div class="right-side flex-child-1">
 			<div class="search-columns">
 				<span class="text label">Search Columns</span>
 				<div class="columns">

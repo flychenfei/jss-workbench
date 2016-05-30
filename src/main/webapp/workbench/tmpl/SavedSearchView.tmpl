@@ -21,15 +21,21 @@
 </script>
 
 <script id="SavedSearchView-listSavedSearches" type="text/html">
-	<div class="form-group savedSearch-name">		
-		<label for="search" class="col-sm-3">Scope</label>
-		<div class="col-sm-9">
-			{{> SavedSearchView-Scopes}}
+	<div class="form-group savedSearch-name">
+		<div class="form-group  flex-parent">
+			<div class="control-title flex-child-1">
+				<label for="search" class="control-label">Scope</label>
+			</div>
+			<div class="flex-child-3">
+				{{> SavedSearchView-Scopes}}
+			</div>
 		</div>
 
-		<div class="user-group hide">
-			<label for="search" class="col-sm-3">User</label>
-			<div class="col-sm-9">
+		<div class="user-group form-group form-group flex-parent hide">
+			<div class="control-title flex-child-1">
+				<label for="search" class="control-label">User</label>
+			</div>
+			<div class="control-input flex-child-3">
 				<input type="text" class="form-control user" placeholder="">
 			</div>
 		</div>
@@ -37,20 +43,30 @@
 </script>
 
 <script id="SavedSearchView-saveSavedSearches" type="text/html">
-	<div class="form-group savedSearch-scope">		
-		<label for="search" class="col-sm-3">Name</label>
-		<div class="col-sm-9">
-			<input type="text" class="form-control name" placeholder="">
+	<div class="form-group savedSearch-scope ">
+		<div class="form-group  flex-parent">
+			<div class="control-title flex-child-1">
+				<label for="search" class="control-label">Name</label>
+			</div>
+			<div class="control-input flex-child-3">
+				<input type="text" class="form-control name" placeholder="">
+			</div>
 		</div>
 
-		<label for="search" class="col-sm-3">Scope</label>
-		<div class="col-sm-9">
-			{{> SavedSearchView-Scopes}}
+		<div class="form-group  flex-parent">
+			<div class="control-title flex-child-1">
+				<label for="search" class="control-label">Scope</label>
+			</div>
+			<div class="flex-child-3">
+				{{> SavedSearchView-Scopes}}
+			</div>
 		</div>
 
-		<div class="user-group">
-			<label for="search" class="col-sm-3">User</label>
-			<div class="col-sm-9">
+		<div class="user-group form-group flex-parent">
+			<div class="control-title flex-child-1">
+				<label for="search" class="control-label">User</label>
+			</div>
+			<div class="control-input flex-child-3">
 				<input type="text" class="form-control user" placeholder="">
 			</div>
 		</div>
@@ -60,9 +76,11 @@
 </script>
 
 <script id="SavedSearchView-deleteSavedSearches" type="text/html">
-	<div class="form-group savedSearch-id">
-		<label for="search" class="col-sm-3">Id</label>
-		<div class="col-sm-9">
+	<div class="form-group savedSearch-id  flex-parent">
+		<div class="control-title flex-child-1">
+			<label for="search" class="control-label">Id</label>
+		</div>
+		<div class="control-input flex-child-3">
 			<input type="text" class="form-control id" placeholder="">
 		</div>
 	</div>
