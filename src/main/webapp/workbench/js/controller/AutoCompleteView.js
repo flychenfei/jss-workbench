@@ -51,6 +51,13 @@
 
 			"change; .search-columns .radio-inline input": function(event){
 				var view = this;
+				var type = $(event.currentTarget).val();
+				var $geoType = view.$el.find(".geo-type");
+				if(type == "geo"){
+					$geoType.removeClass("hide");
+				}else{
+					$geoType.addClass("hide");
+				}
 				if(view.$qSearch.val()){
 					triggerURLChangeEvent.call(view);
 				}
@@ -58,9 +65,7 @@
 
 			"change; .geo-type": function(event){
 				var view = this;
-				if(view.$geo.val()){
-					triggerURLChangeEvent.call(view);
-				}
+				triggerURLChangeEvent.call(view);
 			}
 		},
 
@@ -95,6 +100,10 @@
 		if(searchType){
 			params.push({name:"type", value: searchType});
 		}
+		if(searchType == "geo"){
+			var geoType = view.$el.find(".geo-type option:selected").val();
+			params.push({name:"geo_type", value: geoType});
+		}
 		params.push({name:"queryString", value:view.$qSearch.val()});
 		// --------- /build searchValues object --------- //
 		return params;
@@ -117,7 +126,12 @@
 	function renderHelperText(){
 		var view = this;
 		org = workbench.getOrg();
-
+		var $geoGroup = view.$el.find(".geo-group");
+		if(org == "jobsBigData"){
+			$geoGroup.addClass("hide");
+		}else{
+			$geoGroup.removeClass("hide");
+		}
 		// render the helper
 		var $apiDoc = $(render("tmpl-"+org+"-autocomplete-helper"));
 		var $item = view.$el.find(".form-control.q_search");

@@ -12,26 +12,6 @@
 						<input type="text" class="form-control q_search" placeholder="">
 					</div>
 				</div>
-				<div class="form-group  flex-parent geo-group hide">
-					<div class="control-title flex-child-1">
-						<label for="search" class="control-label">GEO</label>
-					</div>
-					<div class="control-input flex-child-3">
-						<input type="text" class="form-control geo" placeholder="">
-					</div>
-					<div class="control-title flex-child-1">
-						<label for="search" class="control-label"></label>
-					</div>
-					<div class="flex-child-3">
-						<select class="geo-type form-control">
-							<option value ="city">city</option>
-							<option value ="state">state</option>
-							<option value="country">country</option>
-							<option value="zip">zip</option>
-							<option value="latlong">latlong</option>
-						</select>
-					</div>
-				</div>
 			</div>
 		</div>
 
@@ -64,6 +44,15 @@
 					<div class="line">
 						<label class="radio-inline">
 						  <input type="radio" name="searchType" value="stage"> Stage
+						</label>
+						<label class="radio-inline geo-group">
+							<input type="radio" name="searchType" value="geo"> Geo
+							<select class="geo-type hide">
+								<option value ="city">city</option>
+								<option value ="state">state</option>
+								<option value="country">country</option>
+								<option value="zip">zip</option>
+							</select>
 						</label>
 					</div>
 						

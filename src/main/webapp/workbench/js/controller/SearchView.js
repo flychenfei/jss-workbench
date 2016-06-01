@@ -519,13 +519,14 @@
 						"location", "userlist", "joborders", 
 						"jobtitle", "degree", "major", 
 						"before-date", "after-date", "stages", 
-						"degrees", "certifications", "majors"];
+						"degrees", "certifications", "majors",
+						"returnOnly"];
 		var $geo = view.$el.find(".geo-group");
 		var template = org;
 
 		// show geo when org change to branchG/dev2
 		if (org == "branchG" || org == "dev2" || org == "devVRP" || org == "devVRP2" || org == "core" || org == "demo1"){
-			columns.push("geo-city", "geo-state", "geo-country", "geo-zip", "geo-latlong","geo-any", "geo-type");
+			columns.push("geo-city", "geo-state", "geo-country", "geo-zip", "geo-latlong","geo-any", "geo-type", "radius");
 			$geo.removeClass("hide");
 		}else{
 			$geo.addClass("hide");

@@ -8,6 +8,7 @@
 		border: none;
 		border-bottom: solid 1px $bdr-gray;
 		height: auto;
+		border-radius: 0px;
 		.navbar-brand{
 			font-weight: 200;
 			color: $txt-blue;
@@ -28,17 +29,16 @@
 				border-right: solid 2px #ccc;
 				padding-right: 8px;
 				li{
-					display: block;
-					float: left;
 					width: 100%;
 					margin-top: 4px;
+					border-radius: 4px;
+					&:hover{
+						background: #eee;
+					}
 				}
 			}
-			.navbar-right{
-				margin-top: -56px;
-			}
+
 			a{
-				padding-bottom: 7px;
 				letter-spacing: .1em;
 				margin-right: 32px;
 				padding: 8px;
@@ -53,7 +53,7 @@
 			}
 			.org-dropdown{
 				float:right;
-				margin: 15px 0px;
+				margin-top: -41px;
 				a{
 					margin-right: 0;
 					}
